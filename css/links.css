@@ -1,0 +1,35 @@
+.links {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+}
+
+.link {
+  padding: 10px 30px;
+  border: 1px solid gray;
+  background-color: hsl(227.3684210526deg 12.2580645161% 30.3921568627%);
+  width: 100%;
+  text-align: center;
+}
+.link span {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .link span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 461px) {
+  .link {
+    padding: 5px 10px;
+  }
+  .link span {
+    font-size: 14px;
+  }
+}

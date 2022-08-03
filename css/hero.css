@@ -1,0 +1,169 @@
+.hero {
+  color: white;
+  min-height: 565px;
+  padding: 2rem 0rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 20px;
+}
+
+.hero__descr h1 {
+  font-weight: 300;
+}
+
+.hero__descr h1 span {
+  font-weight: 700;
+}
+
+.hero__descr p {
+  margin-top: 30px;
+  font-size: 28px;
+  width: 500px;
+  color: gray;
+}
+
+.hero__buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero__buttons .btn {
+  border: none;
+  padding: 12px 15px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero__buttons .learn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero__buttons .signin {
+  background-color: hsl(139.4117647059deg 58.6206896552% 54.5098039216%);
+}
+
+.hero__buttons .signin:hover {
+  background-color: hsl(139.6153846154deg 59.0909090909% 34.5098039216%);
+  color: white;
+}
+
+.hero__img h3 {
+  margin-left: 110px;
+}
+
+.hero__img h3 span {
+  color: lightskyblue;
+}
+
+.hero__img img {
+  height: 400px;
+  margin-top: 7px;
+  float: right;
+  background-size: cover;
+}
+
+@media (max-width: 887px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 2rem;
+    width: 100%;
+  }
+
+  .hero__descr {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero__descr p {
+    width: 100%;
+  }
+
+  .hero__img {
+    margin-top: 20px;
+  }
+
+  .hero__img img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero__img h3 {
+    margin-right: 150px;
+    text-align: right;
+  }
+
+  .hero__buttons {
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__descr {
+    width: 400px;
+  }
+
+  .hero__descr h1 {
+    font-size: 26px;
+  }
+
+  .hero__descr p {
+    font-size: 24px;
+  }
+
+  .hero__img h3 {
+    font-size: 18px;
+  }
+
+  .hero__img img {
+    height: 350px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 461px) {
+  .hero {
+    padding: 20px 0 20px 20px;
+  }
+
+  .hero__descr {
+    margin: 0;
+  }
+
+  .hero__descr h1 {
+    font-size: 22px;
+    width: 350px;
+  }
+
+  .hero__descr p {
+    font-size: 20px;
+    width: 350px;
+  }
+
+  .hero__img h3 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .hero__img img {
+    height: 300px;
+  }
+
+  .hero__img h3 span {
+  }
+
+  .hero__buttons {
+    margin: 15px auto 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+  }
+
+  .hero__buttons .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
